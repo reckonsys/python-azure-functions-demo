@@ -1,0 +1,5 @@
+export PROJECT_NAME=KHNewDemoProject
+export APP_NAME=KHNewAppName
+export GROUP_NAME=KHNewGroupName-rg
+export LOCATION_NAME=centralindia
+export STORAGE_NAME=khnewdemostorage

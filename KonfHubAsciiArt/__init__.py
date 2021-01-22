@@ -13,15 +13,8 @@ NUM_COLS = 150
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Ascii Generator triggered')
-    src = req.params.get('src')
-    if not src:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            src = req_body.get('src')
 
+    src = req.params.get('src')
     if src is None:
         return func.HttpResponse('Please provide a `src` query parameter')
 
