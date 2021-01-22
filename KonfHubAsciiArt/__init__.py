@@ -34,14 +34,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     cell_height = 2 * cell_width
     num_rows = int(height / cell_height)
     num_cols = NUM_COLS
-    '''
-    if num_cols > width or num_rows > height:
-        cell_width = 6
-        cell_height = 12
-        num_cols = int(width / cell_width)
-        num_rows = int(height / cell_height)
-    '''
-
     output = ""
     for i in range(num_rows):
         for j in range(num_cols):
